@@ -1,0 +1,32 @@
+Practice site: http://www.helpingtesters.com/practice/protractor/login.php
+
+
+Protractor CheetSheet: 
+https://gist.github.com/javierarques/0c4c817d6c77b0877fda
+
+Protractor Documentation: 
+https://www.protractortest.org/#/api
+
+Turorial:
+https://www.youtube.com/watch?v=zfIMVp3zDig
+https://www.youtube.com/watch?v=p8ENoeZENhk&list=PLhW3qG5bs-L_dgIr3hiOlnNIO8NGlXQnP
+all kind of alert,pop ups and hidden elements.
+
+Torrent tutorial: 
+https://1337x.to/search/Protractor/1/
+https://1337x.to/torrent/3537489/UDEMY-Website-Automation-Testing-for-Beginners-with-Protractor-FTU/
+
+Some Browser extension: 
+For VPN: Windscribe
+For Visual basic: 
+	Code runner
+	Protractor Snippet(Auto suggesion)
+Extension: 
+    Protractor Recorder
+    POM builder (to find the xpath and css path, like Chropath)
+
+Best Practice Tips:
+https://www.logigear.com/blog/test-automation/15-best-practices-for-building-an-awesome-protractor-framework/
+
+Vaibhav
+HelpingTesters
