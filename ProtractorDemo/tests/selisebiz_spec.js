@@ -8,41 +8,49 @@ describe('Selise biz login page', function(){
    });
 
    
-    it('Verify all the Static text on Login page',function(){
-        loginPage.verifyLoginText('Login');
-        loginPage.verifyListElements('User Name',0);
-        loginPage.verifyListElements('Password',2);
-        loginPage.verifyListElements('Forget Password',4);  
-        loginPage.verifyButtonText('SIGN IN');
-        rowser.sleep('3000');   
-    });
+            it('Verify all the Static text on Login page',function(){
+                loginPage.verifyLoginText('Login');
+                loginPage.verifyListElements('User Name',0);
+                loginPage.verifyListElements('Password',2);
+                loginPage.verifyListElements('Forget Password',4);  
+                loginPage.verifyButtonText('SIGN IN');
+                // browser.sleep('3000');   
+            });
 
 
-    it('Verify login with valid credentials', function(){
-        
-        loginPage.verifyLogin('Vaibhav','HelpingTesters');
-        browser.sleep('3000');
-    });
+            it('Verify login with valid credentials', function(){
+                
+                loginPage.verifyLogin('Vaibhav','HelpingTesters');
+                // browser.sleep('3000');
+            });
 
-    it('Verify login with invalid credentials', function(){
-        
-        loginPage.verifyLogin('Vaibha','HelpingTester');
-        browser.sleep('3000');
-    });
+            it('Verify login with invalid credentials', function(){
+                
+                loginPage.verifyLogin('Vaibha','HelpingTester');
+                // browser.sleep('3000');
+            });
 
 
-    //------------ Could not do -----------------------------
-                // it('Verify login without any credentials', function(){
+            
+            it('Verify login without any credentials', function(){
+                
+                element(by.model('name')).sendKeys('anything').clear().then(function() {
                     
-                // });
+                    loginPage.verifyLoginWithoutCredentials();     
+                
+                });
 
-                // it('Verify login with username but no password', function(){
+            });
 
-                // });
+            it('Verify login with username but no password', function(){
+                    loginPage.verifyLoginOnlyUsername();
+                    // browser.sleep(3000);
+            });
 
-                // it('Verify login with passwor but no username', function(){
-
-                // });
+            it('Verify login with password but no username', function(){
+                    loginPage.verifyLoginOnlyPassword();
+                    // browser.sleep(3000);    
+            });
 
    
 
