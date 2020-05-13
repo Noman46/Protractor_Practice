@@ -16,9 +16,11 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  //specs: ['../tests/selisebiz_spec.js'],
+  //specs: ['../tests/demo_spec.js'],
   //specs: ['../tests/sel_spec.js'],
-  specs: ['../tests/login_spec.js'],
+  //specs: ['../tests/login_spec.js'],
+  
+  specs: ['../swisslife/dashboard_spec.js'],
   allScriptsTimeout: 300000,
   
 
@@ -26,5 +28,9 @@ exports.config = {
   // Options to be passed to Jasmine
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000,
-  }
+  },
+
+  onPrepare: function() {
+    browser.driver.manage().window().maximize();
+},
 };
