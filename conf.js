@@ -22,7 +22,14 @@ exports.config = {
   //specs: ['../tests/sel_spec.js'],
   //specs: ['../tests/login_spec.js'],
   //specs: ['../swisslife/dashboard_spec.js'],
-  specs: ['../swisslife/onlineApplication_spec.js'],
+  //specs: ['../swisslife/onlineApplication_spec.js'],
+ //specs: ['../DatePicker/datepicker_spec.js'],
+  //specs: ['../DatePicker/nextmontDate_spec.js'],
+   //specs: ['../DatePicker/anydate_spec.js'],
+  specs: ['../DatePicker/dateFromfunction_spec.js'],
+  
+
+ 
   allScriptsTimeout: 300000,
   
 
@@ -33,6 +40,6 @@ exports.config = {
   },
 
   onPrepare: function() {
-    browser.driver.manage().window().maximize();
+    browser.manage().window().maximize();
 },
 };
