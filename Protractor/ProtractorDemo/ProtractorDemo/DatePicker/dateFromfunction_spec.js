@@ -39,7 +39,7 @@ describe('Testing Demo Date picker From Angular material Site', function(){
         let yearBut = element(by.css('.cdk-overlay-container .mat-calendar-header button[aria-label="Choose month and year"]'));
         browser.sleep(5000);
         // getDateFromAnyInput(icons,17/6/2022,yearBut);
-        datePicker.getDateFromAnyInput(icons,'17/6/2022',yearBut);
+        datePicker.getDateFromAnyInput(icons,'7/6/2022',yearBut);
         browser.sleep(10000);
     });
 })
