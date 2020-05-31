@@ -1,6 +1,6 @@
 https://stackoverflow.com/questions/25487402/javascript-select-nested-class-element/25487543
 
-https://stackoverflow.com/questions/57657334/how-to-select-date-of-datepicker-in-protractor
+
 
 CherCherTech webite and Youtube Channel
 https://www.youtube.com/watch?v=T8QRDQjt5lw
